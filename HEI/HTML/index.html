@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haute Ecole d'Informatique</title>
+
+    <!--FONT FAMILY (POPPINS)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!--CSS LINK-->
+    <link rel="stylesheet" href="../AOS & JQUERY/aos.css">
+    <link rel="stylesheet" href="../BOOTSTRAP 5.3.0/CSS/bootstrap.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <!--JAVASCIPT LINK-->
+    <script src="../AOS & JQUERY/aos.js" defer></script>
+    <script src="../BOOTSTRAP 5.3.0/JS/bootstrap.bundle.js" defer></script>
+    <script src="../JAVASCRIPT/main.js" defer></script>
+
+    <!--FONT AWESOME CDN LINK-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" class="no-overflow">
+
+    <!--NAVIGATION BAR STARTS-->
+
+    <!--LOADER-->
+    <div id="loader">
+        <div class="lds-ellipsis" id="loaderIcon">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top top-0" id="customNavbar">
+        <div class="container">
+            <span class="text-light" role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavigation">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+            <a href="#" class="navbar-brand">
+                <img src="../ASSETS/LOGO.png" width="100" height="75">
+            </a>
+            <ul class="navbar-nav d-none d-lg-flex">
+                <li class="nav-item">
+                    <a href="https://www.facebook.com/hei.school" class="nav-link">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.linkedin.com/company/hei-school/" class="nav-link">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.instagram.com/hei.school/" class="nav-link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--NAVIGATION SIDEBAR-->
+    <div class="offcanvas offcanvas-start text-bg-dark w-md-100" id="offcanvasNavigation">
+        <div class="offcanvas-header">
+            <span class="mx-auto display-6" role="button" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav d-flex flex-column" id="customNav">
+                <li class="nav-item">
+                    <a href="#customHeader" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#customSectionOne" class="nav-link">Parcours</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#bourses" class="nav-link">Bourses d'études</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#work" class="nav-link">Débouchés</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#team" class="nav-link">Equipe pédagogique</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#reviews" class="nav-link">Témoignages</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contacts</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--NAVIGATION BAR ENDS-->
+
+
+    <!--HERO SECTION STARTS-->
+    <div class="hero vh-100 d-flex align-items-center customHeader" id="customHeader">
+        <div class="container">
+            <div class="row">
+                <article class="col-lg-7 mx-auto text-center customHeaderArticle w-100" data-aos="fade-up"
+                    data-aos-delay="900">
+                    <h1 class="display-3 text-white fw-bold">Haute Ecole d'Informatique</h1>
+                    <p class="text-white my-3">Professionnels du monde entier unis pour former les étudiants malgaches
+                        suivant les plus hauts
+                        standards.</p>
+                    <a href="#" class="btn me-2 btn-primary">S'INSCRIRE</a>
+                    <a href="#" class="btn btn-light">NOTRE PROGRAMME</a>
+                </article>
+            </div>
+        </div>
+    </div>
+    <!--HERO SECTION ENDS-->
+
+
+    <!--PARCOURS SECTION STARTS-->
+    <section id="customSectionOne">
+
+        <!--TITLE-->
+        <div class="text-center py-5 w-75 mx-auto" data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="display-6 fw-bold">Les parcours chez HEI</h1>
+            <p class="text-muted">
+                L'informatique est la seule et unique filière chez HEI. En revanche, à partir de la
+                deuxième année, les étudiants peuvent choisir entre deux parcours de spécialisation:
+            </p>
+        </div>
+
+        <!--ECOSYSTEME LOGICIEL & TRANSFORMATION NUMERIQUE-->
+        <div class="container">
+            <div class="row d-flex flex-row justify-content-center">
+
+                <!--ECOSYSTEME LOGICIEL-->
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-right">
+                    <div class="card deadline-tjn-card">
+                        <h5 class="mx-auto my-2 fw-bold">Ecosystèmes Logiciels</h5>
+                        <img src="../ASSETS/PART 1/1.png" class="deadline-tjn-card-image">
+                        <div class="card-body text-center">
+                            <p>Formant des développeurs backend et frontend, développeurs mobile, analystes de données,
+                                chefs de projet…</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--TRANSFORMATION NUMERIQUE-->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card deadline-tjn-card" data-aos="fade-left">
+                        <h5 class="mx-auto my-2 fw-bold">Transformation Numérique</h5>
+                        <img src="../ASSETS/PART 1/2.png" class="deadline-tjn-card-image">
+                        <div class="card-body text-center">
+                            <p>Formant des référenceurs web, commerçant-marketeurs digital, analystes de données, chefs
+                                de projet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--PARCOURS SECTION ENDS-->
+
+
+    <!--BOURSES SECTION STARTS-->
+    <section id="bourses" class="bourses">
+        <div class="container">
+            <div class="row" data-aos="fade-up">
+
+                <!--TITLE-->
+                <div class="text-center py-5 w-75 mx-auto" data-aos="fade-up" data-aos-duration="1000">
+                    <h1 class="display-6 fw-bold">Nos bourses</h1>
+                    <p class="text-muted">
+                        Chaque année, HEI octroie des bourses d'études pour 6 étudiants qui sont: les <strong>bourses
+                            d'excellence</strong>, les <strong>bourses à critères sociaux</strong> et les
+                        <strong>bourses Master.</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <!--BOURSES D'EXCELLENCE-->
+                <div class="col-12 col-md-12 col-lg-4" data-aos="fade-up">
+                    <div class="card text-center pb-2 h-100">
+                        <div class="card-body">
+                            <i class="fa-solid fa-circle-1"></i>
+                            <h5 class="card-title fw-bold display-8">Bourses d'excellence</h5>
+                            <p class="py-5">Les bourses d'excellence sont destinées aux trois (03) étudiants et
+                                étudiantes aux meilleurs résultats scolaires et au baccalauréat</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--BOURSE A CRITERES SOCIAUX-->
+                <div class="col-12 col-md-12 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card text-center pb-2 h-100">
+                        <div class="card-body">
+                            <i class="fa-solid fa-circle-2"></i>
+                            <h5 class="card-title fw-bold display-8">Bourses à critères sociaux</h5>
+                            <p class="py-5">Les bourses à critères sociaux sont destinées à deux (02) étudiants et
+                                étudiantes aux meilleurs résultats scolaires et au baccalauréat mais aux capacités
+                                financières les plus réduites</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--BOURSES MASTER EN FRANCE-->
+                <div class="col-12 col-md-12 col-lg-4 " data-aos="fade-up" data-aos-delay="600">
+                    <div class="card text-center pb-2 h-100">
+                        <div class="card-body">
+                            <i class="fa-solid fa-circle-3"></i>
+                            <h5 class="card-title fw-bold display-8">Bourses Master en France</h5>
+                            <p class="py-5">Chaque année, l'étudiant ou l'étudiante aux meilleurs resultats académiques
+                                peut bénéficier d'un financement de ses études en Master dans l'université de son choix
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--BOURSES SECTION ENDS-->
+
+
+    <!--WORK SECTION STARTS-->
+    <section id="work" class="work section-padding my-5">
+        <div class="container">
+            <div class="row">
+
+                <!--TITLE-->
+                <div class="text-center py-5 w-75 mx-auto" data-aos="fade-up" data-aos-duration="1000">
+                    <h1 class="display-6 fw-bold">Les débouchés</h1>
+                    <p class="text-muted">L'informatique est la seule et unique filière chez HEI. En revanche, à partir
+                        de la deuxième
+                        année, les étudiants peuvent choisir entre deux parcours de spécialisation:
+                        <strong>Ecosystèmes Logiciels</strong> et <strong>Transformation Numérique</strong>, amenant
+                        aux débouchés suivants:
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-right">
+                    <div class="card text-center h-100 deadline-card">
+                        <div class="card-body">
+                            <img src="../ASSETS/PART 2/1.webp" class="rounded">
+                            <h6 class="card-title py-2 fw-bold">Référenceur Web</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-right" data-aos-delay="300">
+                    <div class="card text-center h-100 deadline-card">
+                        <div class="card-body">
+                            <img src="../ASSETS/PART 2/2.avif" class="rounded">
+                            <h6 class="card-title py-2 fw-bold">Gestionnaire Web</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-right" data-aos-delay="600">
+                    <div class="card text-center h-100 deadline-card">
+                        <div class="card-body">
+                            <img src="../ASSETS/PART 2/8.webp " class="rounded">
+                            <h6 class="card-title py-2 fw-bold">Développeurs Mobile</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-right" data-aos-delay="900">
+                    <div class="card text-center h-100 deadline-card">
+                        <div class="card-body">
+                            <img src="../ASSETS/PART 2/4.webp" class="rounded">
+                            <h6 class="card-title py-2 fw-bold">Analystes de données</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-right" data-aos-delay="300">
+                    <div class="card text-center h-100 deadline-card">
+                        <div class="card-body">
+                            <img src="../ASSETS/PART 2/5.webp" class="rounded">
+                            <h6 class="card-title py-2 fw-bold">Développeurs Frontend</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-right" data-aos-delay="600">
+                    <div class="card text-center h-100 deadline-card">
+                        <div class="card-body">
+                            <img src="../ASSETS/PART 2/6.webp" class="rounded">
+                            <h6 class="card-title py-2 fw-bold">Développeurs Backend</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-right" data-aos-delay="900">
+                    <div class="card text-center h-100 deadline-card">
+                        <div class="card-body">
+                            <img src="../ASSETS/PART 2/7.webp" class="rounded">
+                            <h6 class="card-title py-2 fw-bold">DevOps</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-right" data-aos-delay="1200">
+                    <div class="card text-center h-100 deadline-card">
+                        <div class="card-body">
+                            <img src="../ASSETS/PART 2/3.webp" class="rounded">
+                            <h6 class="card-title py-2 fw-bold">Chefs de projet</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--WORK SECTION ENDS-->
+
+
+    <!--EQUIPE PEDAGOGIQUE SECTION STARTS-->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="row" data-aos="fade-up">
+
+                <!--TITLE-->
+                <div class="text-center py-5 w-75 mx-auto" data-aos="fade-up" data-aos-duration="1000">
+                    <h1 class="display-6 fw-bold">Un aperçu de l'équipe pédagogique</h1>
+                    <p class="text-muted">Un groupe de jeunes spécialistes prêt à enseigner les bases de l'
+                        informatique
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-1">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card" data-aos="fade-down">
+                        <div class="card-body text-center p-5">
+                            <img src="../ASSETS/PART 3/1.png" class="rounded-circle mb-3">
+                            <h3 class="card-title mb-3">Tahina Ralitera</h3>
+                            <p class="card-text">Docteure-Ingénieure, CEA, Saclay | Prix L'Oréal-UNESCO pour les Femmes
+                                en Science (2017)</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card" data-aos="fade-down" data-aos-delay="300">
+                        <div class="card-body text-center p-5">
+                            <img src="../ASSETS/PART 3/2.jpg" class="rounded-circle mb-3">
+                            <h3 class="card-title mb-3">Yannick Raharijaona</h3>
+                            <p class="card-text">ML Tech Lead, Rocket Science, Ottawa</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card" data-aos="fade-down" data-aos-delay="600">
+                        <div class="card-body text-center p-5">
+                            <img src="../ASSETS/PART 3/3.png" class="rounded-circle mb-3">
+                            <h3 class="card-title mb-3">Parison Ravalomanda</h3>
+                            <p class="card-text">Ingénieur logiciel, Google, Londres</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card" data-aos="fade-down" data-aos-delay="900">
+                        <div class="card-body text-center p-5">
+                            <img src="../ASSETS/PART 3/4.png" class="rounded-circle mb-3">
+                            <h3 class="card-title mb-3">Sandrine Ramaroson</h3>
+                            <p class="card-text">Ex-directrice technique, Vanilla Pay, Antananarivo | Révélation Fintech
+                                de Women In Africa (2020)</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!--EQUIPE PEDAGOGIQUE SECTION ENDS-->
+
+
+    <!--STATS SECTION STARTS-->
+    <section class="stats" id="stats">
+        <div class="container">
+            <div class="container text-center d-flex flex-column align-items-center py-5 w-75">
+
+                <div class="row w-150 my-5" data-aos="fade-up">
+
+                    <card class="card border-0 col-md-3 col-12 d-flex align-items-center text-center">
+                        <i class="fa-solid fa-school display-1"></i>
+                        <h3><span id="state_anim1"></span></h3>
+                        <p class="text-secondary">Un an d'existence</p>
+                    </card>
+                    <card class="card border-0 col-md-3 col-12 d-flex align-items-center text-center">
+                        <i class="fa-solid fa-users display-1"></i>
+                        <h3><span id="state_anim2"></span>+</h3>
+                        <p class="text-secondary">Elèves</p>
+                    </card>
+                    <card class="card border-0 col-md-3 col-12 d-flex align-items-center text-center">
+                        <i class="fa-solid fa-handshake display-1"></i>
+                        <h3><span id="state_anim3"></span>+</h3>
+                        <p class="text-secondary">Bénéficiaire d'une exonération partielle ou totale de leur frais de
+                            scolarité</p>
+                    </card>
+                    <card class="card border-0 col-md-3 col-12 d-flex align-items-center text-center">
+                        <i class="fa-solid fa-dollar-sign display-1"></i>
+                        <h3><span id="state_anim4"></span>+</h3>
+                        <p class="text-secondary">Bénéficiaire des bourses HEI</p>
+                    </card>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!--STATS SECTION ENDS-->
+
+
+    <!--TESTIMONIALS SECTION STARTS-->
+    <section id="reviews" class="full-height px-lg-5">
+        <div class="container">
+
+            <!--TITLE-->
+            <div class="text-center py-5 w-75 mx-auto" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="display-6 fw-bold">Que disent nos élèves?</h1>
+            </div>
+
+            <div class="row gy-4 gx-6">
+
+                <div class="col-md-4 card" data-aos="zoom-out-up">
+
+                    <div class="review shadow-effect bg-base p-4 rounded-4">
+                        <i class="fa-solid fa-quote-left display-1"></i>
+                        <p class="my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quae facilis
+                            fugiat molestias ab illum excepturi, qui optio modi asperiores, delectus maiores!</p>
+                        <div class="person">
+                            <h5 class="mb-0">RAVOAJANAHARY</h5>
+                            <p class="mb-0">Fiantso Harena</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 card" data-aos="zoom-out-up" data-aos-delay="300">
+
+                    <div class="review shadow-effect bg-base p-4 rounded-4">
+                        <i class="fa-solid fa-quote-left display-1"></i>
+                        <p class="my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quae facilis
+                            fugiat molestias ab illum excepturi, qui optio modi asperiores, delectus maiores!</p>
+                        <div class="person">
+                            <h5 class="mb-0">RAVOAJANAHARY</h5>
+                            <p class="mb-0">Fiantso Harena</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 card" data-aos="zoom-out-up" data-aos-delay="600">
+
+                    <div class="review shadow-effect bg-base p-4 rounded-4">
+                        <i class="fa-solid fa-quote-left display-1"></i>
+                        <p class="my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quae facilis
+                            fugiat molestias ab illum excepturi, qui optio modi asperiores, delectus maiores!</p>
+                        <div class="person">
+                            <h5 class="mb-0">RAVOAJANAHARY</h5>
+                            <p class="mb-0">Fiantso Harena</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!--TESTIMONIALS SECTION ENDS-->
+
+
+    <!--CONTACT SECTION STARTS-->
+    <section id="contact">
+        <div class="container">
+            <div class="row mb-5">
+
+                <!--TITLE-->
+                <div class="text-center py-5 w-75 mx-auto" data-aos="fade-up" data-aos-duration="1000">
+                    <h1 class="display-6 fw-bold">Contactez-Nous</h1>
+                    <p class="text-muted">Pour plus d'informations, écrivez-votre nom et votre questions sur le
+                        formulaire ci-dessous ou Contactez nous :
+                    </p>
+                </div>
+            </div>
+
+            <div class="row my-2 text-center">
+                <div class="col-lg-4 ">
+                    <i class="fa-solid fa-location-dot display-5"></i>
+                    <div class="row">
+                        <h2 class="fw-bold mt-2">Adresse</h2>
+                        <p>Ivandry, Antananarivo, Madagascar, 101</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 ">
+                    <i class="fa-solid fa-envelope display-5"></i>
+                    <div class="row">
+                        <h2 class="fw-bold mt-2">Email</h2>
+                        <p>contact@hei.school</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 ">
+                    <i class="fa-solid fa-phone display-5"></i>
+                    <div class="row">
+                        <h2 class="fw-bold mt-2">Téléphone</h2>
+                        <p>+261 34 94 041 16</p>
+                    </div>
+                </div>
+            </div>
+
+            <form action="" class="row g-3 justify-content-center">
+                <div class="col-md-5">
+                    <input type="text" class="form-control" placeholder="Nom">
+                </div>
+                <div class="col-md-5">
+                    <input type="email" class="form-control" placeholder="Adresse email">
+                </div>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" placeholder="Entrez un sujet">
+                </div>
+                <div class="col-md-10">
+                    <textarea name="" id="" cols="30" rows="5" class="form-control"
+                        placeholder="Entez un message"></textarea>
+                </div>
+                <div class="col-md-10">
+                    <button class="btn button">CONTACT</button>
+                </div>
+            </form>
+
+        </div>
+    </section>
+    <!--CONTACT SECTION ENDS-->
+
+
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-4">
+                        <img src="../ASSETS/LOGO.png" alt="">
+                    </div>
+                    <div class="col-lg-2">
+                        <h5 class="text-white fw-bold">Liens</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#customHeader">Accueil</a></li>
+                            <li><a href="#customSectionOne">Parcours</a></li>
+                            <li><a href="#bourses">Bourses d'études</a></li>
+                            <li><a href="#work">Débouchés</a></li>
+                            <li><a href="#team">Equipe</a></li>
+                            <li><a href="#reviews">Témoignages</a></li>
+                            <li><a href="#contact">Contacts</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2">
+                        <h5 class="text-white fw-bold">Extra</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Etudes des cas</a></li>
+                            <li><a href="#">Evenement</a></li>
+                            <li><a href="#">Intranet</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5 class="text-white fw-bold">Contacts</h5>
+                        <ul class="list-unstyled customClass">
+                            <li>Ivandry, Antananarivo, Madagascar, 101</li>
+                            <li>Email: contact@hei.school</li>
+                            <li>Téléhone: +261 34 94 041 16</li>
+                        </ul>
+                        <div class="col-md-6">
+                            <div class="social-icons text-white display-5">
+                                <a href="#"><i class="fa-brands fa-facebook text-white fs-2"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin text-white fs-2"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram text-white fs-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="mb-0">© 2023 copyright Tous droits réservés | Designed by<a href="#" class="text-white">
+                                DREAMTEAM-HEI</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>
